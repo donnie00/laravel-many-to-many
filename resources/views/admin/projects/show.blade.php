@@ -16,6 +16,13 @@
          <h4>Type:</h4>
          <p>{{ $project->type->name }}</p>
 
+         <h4>Technologies:</h4>
+         @foreach ($project->technologies as $technology)
+            <p>
+               {{ $project->technologies }}
+            </p>
+         @endforeach
+
          <h4>Description: </h4>
          <p>{{ $project->description }}</p>
 
